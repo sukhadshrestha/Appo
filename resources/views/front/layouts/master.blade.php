@@ -1,0 +1,12 @@
+@include('front.includes.headtags')
+@include('front.includes.header')
+@include('front.includes.slider')
+@include('front.includes.footer')
+@include('front.includes.endtags')
+
+@yield('headtags')
+@yield('header')
+@yield('slider')
+@yield('content')
+@yield('footer')
+@yeild('endtags')
