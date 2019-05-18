@@ -23,8 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('front.pages.loggedin');
+        return view('front.pages.indexLogin');
     }
+
+    // public function indexLogin()
+    // {
+    //     return view('front.pages.indexLogin');
+    // }
 
      public function store(Request $request)
     {
