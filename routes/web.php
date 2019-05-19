@@ -23,3 +23,20 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::post('/','AppointmentController@store')->name('Appointment.store');
+Route::get('/admin/add-doctor','DoctorController@index');
+Route::group(
+    [
+        'namespace' => 'Admin',
+        'prefix' => 'admin',
+        'middleware' => 'auth',
+    ],
+
+    function()
+    {
+        Route::resource('add-doctor', 'DoctorController');
+        Route::resource('add-department',"DepartmentController");
+        Route::get('/','DashboardController@index');
+        Route::get('/viewDoctor','DoctorController@viewAllDoctor');
+    }
+
+);
