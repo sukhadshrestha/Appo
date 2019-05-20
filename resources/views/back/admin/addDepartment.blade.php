@@ -21,6 +21,7 @@
                     {{ session('success') }}
                 </div>
             @endif
+            <h1>Add Department</h1>
         <form action="{{route('add-department.store')}}" method="POST">
             @csrf
                 <div class="form-group">

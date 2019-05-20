@@ -76,9 +76,10 @@
 								<div class="form-group col-md-6">
 									<select name="department" placeholder="Department">
 										<option value="0">Department</option>
-										<option value="1">Dental</option>
-										<option value="2">Heart</option>
-										<option value="3">Pathology</option>
+										<option value="1">Physiology</option>
+										<option value="2">Pathology</option>
+										<option value="3">Cardiology</option>
+										<option value="4">Neurology</option>
 									</select>
 								</div>
 							</div>

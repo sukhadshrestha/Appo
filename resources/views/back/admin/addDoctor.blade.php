@@ -4,6 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
+            
                 @if ($errors)
                 @foreach ($errors->all() as $error)
                     <div class="alert alert-danger">
@@ -21,6 +22,7 @@
                     {{ session('success') }}
                 </div>
             @endif
+            <h1>Add Doctor</h1>
             <form action="{{route('add-doctor.store')}}" method="POST">
                 @csrf
                 <div class="form-group">
