@@ -10,7 +10,7 @@ class Appointment extends Model
         'fullName', 'email', 'number','department',
     ];
 
-     protected $hidden = [
-        'userId',
-    ];
+    //  protected $hidden = [
+    //     'userId',
+    // ];
 }
